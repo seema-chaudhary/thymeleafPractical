@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Service Page</title>
+</head>
+<body>
+<h1>Service provided by code with seema</h1>
+
+<!-- <footer id="hostTag" th:replace="footer::footer1"> -->
+<!-- <footer id="hostTag" th:include="footer::footer1"> -->
+<!-- <footer id="hostTag" th:insert="footer::footer1">  -->
+<!-- <footer id="hostTag" th:insert="footer::footer2('This is Titile','This is subtitle')"> -->
+	 <footer id="hostTag" th:insert="footer::footer2(${title},${subtitle}, ${date} )">
+	
+</footer>
+</body>
+</html>

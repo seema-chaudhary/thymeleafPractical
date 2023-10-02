@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Iterate</title>
+</head>
+<body>
+<h1>How to use loop in Thymeleaf</h1>
+<h1 th:text="${names}" ></h1>
+<h1>status.index, count, size, even/odd, first, last</h1>
+<ul>
+	<li th:each="n,status : ${names}" >
+		<span th:style="${status.odd}?'font-weight:bold;color:green':'color:red '" th:text="${status.index+1}+' '+ ${n}"></span>
+		
+	</li>
+</ul>
+</body>
+</html>

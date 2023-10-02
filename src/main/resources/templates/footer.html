@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Footer</title>
+</head>
+<body>
+<!-- <footer id="fragmentTag" th:fragment="footer1">
+	<div>
+		<h1>Code with Seema</h1>
+		<h2>Provide good content of programming languages</h2>
+		<h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veritatis ipsam at error accusantium ipsa aliquid dolor consequuntur asperiores laborum consectetur ipsum perspiciatis molestias iste sit. Consequatur praesentium perferendis illum.</p></h2>
+		<h3><p>lorem</p></h3>
+	</div>
+</footer>
+-->
+
+<footer id="fragmentTag" th:fragment="footer2(title, subtitle, date)">
+	<div>
+		<h1 th:text="${title}"></h1>
+		<h1 th:text="${subtitle}"></h1>
+		<h2 th:text="${date}"></h2>
+		<h2>Provide good content of programming languages</h2>
+		<h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veritatis ipsam at error accusantium ipsa aliquid dolor consequuntur asperiores laborum consectetur ipsum perspiciatis molestias iste sit. Consequatur praesentium perferendis illum.</p></h2>
+		<h3><p>lorem</p></h3>
+	</div>
+</footer>
+
+</body>
+</html>
